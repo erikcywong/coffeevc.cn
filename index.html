@@ -203,6 +203,36 @@
             box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
         }
 
+        /* 页脚样式 */
+        .footer {
+            background-color: var(--bg-secondary);
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .copyright {
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        .trademark-symbol {
+            font-size: 0.9rem;
+            color: var(--accent-green);
+            vertical-align: super;
+            margin-left: 2px;
+        }
+
         /* 生态网络模态框 */
         .eco-modal {
             display: none;
@@ -799,10 +829,14 @@
                 height: 150px;
                 font-size: 1.1rem;
             }
+            
+            .footer {
+                padding: 1.5rem;
+            }
         }
         
-        /* 版权符号样式 */
-        .copyright-symbol {
+        /* 商标符号样式 */
+        .trademark-symbol-nav {
             position: absolute;
             top: -5px;
             right: -15px;
@@ -1236,7 +1270,7 @@
     <nav class="navbar">
         <div class="logo">
             <div class="brand-title-container">
-                <h2 style="color: var(--accent-green);">西纳咖啡<span class="copyright-symbol">©</span></h2>
+                <h2 style="color: var(--accent-green);">西纳咖啡<span class="trademark-symbol-nav">™</span></h2>
             </div>
         </div>
         <div class="nav-links">
@@ -1557,7 +1591,7 @@
                         </div>
                         <div>
                             <h4>微信</h4>
-                            <p>15800222338</p>
+                            <p>+8615800222338 / JEBI_ONE</p>
                         </div>
                     </div>
                     
@@ -1593,6 +1627,15 @@
             </div>
         </section>
     </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="copyright">2025 SHINAE COFFEE<span class="trademark-symbol">™</span></div>
+            <p>创新闭环咖啡产业链生态网络 | 9大平台生态系统</p>
+            <p style="font-size: 0.8rem; color: var(--text-secondary);">本网站所有内容仅供参考，不构成投资建议</p>
+        </div>
+    </footer>
 
     <script>
         // ============================================
